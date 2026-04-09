@@ -1,0 +1,11 @@
+<div class="container py-4">
+	<h1 class="mb-4 text-center">Macchine da cantiere</h1>
+
+	<div class="row g-3">
+		@for (macchina of macchine; track macchina) {
+			<div class="col-12 col-md-6 col-lg-4">
+				<app-macchina [nomeMacchina]="macchina"></app-macchina>
+			</div>
+		}
+	</div>
+</div>
