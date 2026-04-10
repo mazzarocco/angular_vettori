@@ -1,9 +1,15 @@
 <div class="container py-4">
+	<!-- Titolo della sezione principale visualizzata all'utente. -->
 	<h1 class="mb-4 text-center">Macchine da cantiere</h1>
 
 	<div class="row g-3">
+		<!--
+		  @for e' il controllo di flusso moderno di Angular.
+		  Per ogni nome in macchine crea una card usando il componente figlio app-macchina.
+		--> 
 		@for (macchina of macchine; track macchina) {
 			<div class="col-12 col-md-6 col-lg-4">
+				<!-- Binding input: passa il nome corrente al figlio tramite la proprieta' nomeMacchina. -->
 				<app-macchina [nomeMacchina]="macchina"></app-macchina>
 			</div>
 		}

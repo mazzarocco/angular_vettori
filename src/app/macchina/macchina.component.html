@@ -1,9 +1,11 @@
 <div class="card h-100 shadow-sm">
 	<div class="card-body">
+		<!-- Interpolazione: stampa il valore ricevuto dall'input nomeMacchina. -->
 		<h5 class="card-title">{{ nomeMacchina }}</h5>
 		<p class="mb-2 text-muted">Pezzi disponibili:</p>
 
 		<ul class="mb-0">
+			<!-- Ciclo sui pezzi locali del componente per creare gli elementi <li>. -->
 			@for (pezzo of pezzi; track pezzo) {
 				<li>{{ pezzo }}</li>
 			}
